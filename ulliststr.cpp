@@ -39,9 +39,9 @@ void ULListStr::push_back(const std::string& val)
   //std::cout << "add back: " << val << std::endl;
 	if(tail_ == nullptr) {                // empty list
 		Item *newItem = new Item();
-		newItem->val[0] = val;
-		newItem->first = 0;
-		newItem->last = 1;
+		newItem->val[3] = val;
+		newItem->first = 3;
+		newItem->last = 4;
     newItem->next = nullptr;
     newItem->prev = nullptr;
 
@@ -73,9 +73,9 @@ void ULListStr::push_front(const std::string& val)
   //std::cout << "add front: " << val << std::endl;
 	if(head_ == nullptr) {                // empty list
 		Item *newItem = new Item();
-		newItem->val[9] = val;
-		newItem->first = 9;
-		newItem->last = 10;
+		newItem->val[3] = val;
+		newItem->first = 3;
+		newItem->last = 4;
     newItem->next = nullptr;
     newItem->prev = nullptr;
 
